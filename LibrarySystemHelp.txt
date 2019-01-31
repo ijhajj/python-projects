@@ -1,0 +1,3 @@
+The Library Desktop system is designed for small scale libraries which intend to keep all the data local to their machines. The application can be converted to an executable file and details are entered into a sqlite3 DB which does not need any specific installations.
+The UI of the application is designed using 'tkinter' and works with ample verification checks.
+Still the display of the fetched data can be improved, this works sufficiently well to give one a start.
