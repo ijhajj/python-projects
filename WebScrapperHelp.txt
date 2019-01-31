@@ -1,0 +1,16 @@
+Flow:
+	Read the html file of the target URL into python using 'Request' library
+	Parse it to locate the exact html tag from which information needs to be extracted
+	Store it in the proper format as per requirement
+
+Libraries involved:
+	requests: fetch the html content from the target URL
+	r=requests.get(URL)				creates a request class
+	c=r.content						grabs the actual content and places it in the variable 'c'
+
+Find the specific tag using "find_all" option
+	all_img = soup.find_all("img")
+
+Browse through each entity and extract the image details from "src" property of "img" tag
+	for image in all_img:
+	imgList.append(image['src'])
